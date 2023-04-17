@@ -1,6 +1,18 @@
+:root {
+  --background-color: #ffffff;
+  --logo-color: #4d5ae5;
+  --main-title-color: #2e2f42;
+  --main-paragraf-color: #434455;
+  --right-part-logo-header: #2e2f42;
+  --right-part-logo-footer: #f4f4fd;
+  --portfolio-btn-text: #4d5ae5;
+  --portfolio-btn-background: #f4f4fd;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: #434455;
+  background-color: var(--background-color);
 }
 
 .list {
@@ -17,13 +29,14 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #2e2f42;
+  text-transform: uppercase;
+  color: var(--logo-color);
 }
 
-.left-part-logo {
-  color: #4d5ae5;
+.right-part-logo {
+  color: var(--right-part-logo-header);
 }
 
 .menu-link {
@@ -37,6 +50,10 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+}
+
+.menu-contacts {
+  font-style: normal;
 }
 
 .contacts {
@@ -58,6 +75,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -67,6 +85,7 @@ body {
 }
 
 .modal-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -97,20 +116,30 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-paragraf-color);
 }
 
 .last-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 40px;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.members-company {
+  background-color: #f4f4fd;
+}
+
+.list-company-members {
+  background-color: #ffffff;
 }
 /* =====/MAIN-CONTAINER===== */
 /* =====FOOTER===== */
-.right-part-logo {
-  color: #f4f4fd;
+.right-part-logo-footer {
+  color: var(--right-part-logo-footer);
 }
 
 .text-item-footer {
@@ -126,18 +155,30 @@ body {
 }
 /* =====/FOOTER===== */
 /* =====PORTFOLIO===== */
-.nav-portfolio {
+.btn-portfolio {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background: #f4f4fd;
+  color: var(--portfolio-btn-text);
+  background-color: var(--portfolio-btn-background);
 }
 
-.nav-portfolio:hover,
-.nav-portfolio:focus {
-  background: #404bbf;
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   color: #ffffff;
+  background-color: #404bbf;
   cursor: pointer;
+}
+
+.suptitle-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
 }
